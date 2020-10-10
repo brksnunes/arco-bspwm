@@ -64,7 +64,7 @@ imagemagick
 lxappearance
 lxrandr
 nitrogen
-picom
+picom-ibhagwan-git
 playerctl
 python-pywal
 volumeicon
