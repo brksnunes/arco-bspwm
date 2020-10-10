@@ -1,28 +1,10 @@
 #!/bin/bash
 #set -e
 ###############################################################################
-# Author	:	Erik Dubois
-# Website	:	https://www.erikdubois.be
-# Website	:	https://www.arcolinux.info
-# Website	:	https://www.arcolinux.com
-# Website	:	https://www.arcolinuxd.com
-# Website	:	https://www.arcolinuxb.com
-# Website	:	https://www.arcolinuxiso.com
-# Website	:	https://www.arcolinuxforum.com
-###############################################################################
-#
-#   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. RUN AT YOUR OWN RISK.
-#
-###############################################################################
-
-
-###############################################################################
 #
 #   DECLARATION OF FUNCTIONS
 #
 ###############################################################################
-
-
 func_install() {
 	if pacman -Qi $1 &> /dev/null; then
 		tput setaf 2
@@ -48,15 +30,15 @@ echo "Installation of the core software"
 
 list=(
 lightdm
-arcolinux-lightdm-gtk-greeter
-arcolinux-lightdm-gtk-greeter-settings
-arcolinux-wallpapers-git
+lightdm-gtk-greeter
+lightdm-gtk-greeter-settings
+#arcolinux-wallpapers-git
 thunar
 thunar-archive-plugin
 thunar-volman
-xfce4-terminal
-arcolinux-xfce-git
-arcolinux-local-xfce4-git
+#xfce4-terminal
+#arcolinux-xfce-git
+#arcolinux-local-xfce4-git
 bspwm
 sxhkd
 dmenu
@@ -64,13 +46,13 @@ xdo
 feh
 sutils-git
 xtitle-git
-arcolinux-bspwm-git
-arcolinux-bspwm-dconf-git
-arcolinux-config-bspwm-git
+#arcolinux-bspwm-git
+#rcolinux-bspwm-dconf-git
+#arcolinux-config-bspwm-git
 awesome-terminal-fonts
 polybar
-arcolinux-polybar-git
-arcolinux-logout-git
+#arcolinux-polybar-git
+#arcolinux-logout-git
 )
 
 count=0
